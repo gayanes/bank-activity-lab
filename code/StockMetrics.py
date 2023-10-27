@@ -31,7 +31,14 @@ class StockMetrics(StockData):
     def median02(self):
         """pt2
         """
-        ...
+        medians = []
+        for row in self.data:
+            valid_prices = []
+            for price in row[1:]:
+                if not (price == " " or price == ""):
+                    valid_prices.append(float(price))
+            medians.append(stats.median(valid_prices))
+        return medians
 
     def stddev03(self):
         """pt3
