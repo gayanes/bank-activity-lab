@@ -43,4 +43,11 @@ class StockMetrics(StockData):
     def stddev03(self):
         """pt3
         """
-        ...
+        std_devs = []
+        for row in self.data:
+            valid_prices = []
+            for price in row[1:]:
+                if not (price == " " or price == ""):
+                    valid_prices.append(float(price))
+            std_devs.append(round(stats.stdev(valid_prices), 3))
+        return std_devs
