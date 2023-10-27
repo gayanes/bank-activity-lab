@@ -18,8 +18,14 @@ class StockMetrics(StockData):
         """
         averages = []
         for row in self.data:
-            ...
-
+            valid_prices = []
+            sum = 0
+            for price in row[1:]:
+                if not (price == " " or price == ""):
+                    valid_prices.append(float(price))
+                    sum += float(price)
+            average = round(sum / len(valid_prices), 3)
+            averages.append(average)
         return averages
 
     def median02(self):
