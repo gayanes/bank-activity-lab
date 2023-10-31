@@ -1,28 +1,15 @@
 # README
 
-Credit to the [Data Science Working Group](http://datascience.codeforsanfrancisco.org) for this template. To complete this project, delete all template text (save for the headers) and fill in your own information.
-
-Begin reading `instructions.md` to get started.
+Credit to the [Data Science Working Group](http://datascience.codeforsanfrancisco.org) for this template.
 
 ## Project Intro/Objective
-The purpose of this project is ________. (Describe the main goals of the project and potential civic impact. Limit to a short paragraph, 3-6 Sentences)
+The purpose of this project is to analyze stock data using object oriented programming. The project will eventually be used to measure how reliably sentiment predicts stock price.
 
 ### Methods Used
-* Inferential Statistics
-* Machine Learning
-* Data Visualization
-* Predictive Modeling
-* etc.
+* Descriptive Statistics
 
 ### Technologies
-* R 
 * Python
-* D3
-* PostGres, MySql
-* Pandas, jupyter
-* HTML
-* JavaScript
-* etc. 
 
 ## Project Description
-(Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
+The purpose of this project is to analyze stock data. This project utilizes a sample dataset of 9 weeks of stock prices. This project uses OOP and descriptive statistics to analyze how well prices can be predicted using sentiment. The functions, classes, and methods in this project read in a set of stock prices and calculates the mean, median, and standard deviation for the data.

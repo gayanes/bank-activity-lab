@@ -1,23 +1,3 @@
-"""
-A validation script to check if your data-analysis pipeline is operating as
-intended.
-
-To test the first part of your code, run:
-
-python -m code.test.validate pt1
-
-To test the first two parts of your pipeline, run:
-
-python -m code.test.validate pt2
-
-To test all the three parts of your pipeline, run:
-
-python -m code.test.validate pt3
-
-while in the `code/test` folder to test the completeness of your code.
-
-The terminal output will tell you if your pipeline is successful.
-"""
 import sys
 import os
 
